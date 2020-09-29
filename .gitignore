@@ -3,6 +3,8 @@
 
 !*.html
 !*.css
+!*.jpg
+!*.png
 
 !README.md
 !.gitignore

@@ -1,0 +1,83 @@
+html {
+  font-family: Helvetica;
+  font-size: 11pt;
+  color: #222;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+header {
+  margin: 0;
+  border-width: 0;
+  padding: 4rem 20vw;
+  background-color: #222;
+  /*background-image: ;*/
+  background:
+    linear-gradient(rgba(0,0,0,1.0),rgba(0,0,0,1.0)),
+    url(../banner.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  /*filter: grayscale(100%);*/
+  background-blend-mode: saturation;
+  /*border-bottom: solid 5px #ccc;*/
+}
+
+img.cv-photo {
+  /*display: block;*/
+  border-radius: 50%;
+  width: 5cm;
+  border: solid 3px #ddd;
+  position: absolute;
+  top: 4rem;
+  left: 70vw;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem 20vw;
+}
+
+nav {
+  margin: 0;
+  padding: 1rem;
+  /*background-color: #ccc;*/
+  background: linear-gradient(#ccc,#fff);
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li {
+  display: inline;
+  padding: 1rem;
+  margin: 1rem 0;
+  /*border: solid 2px black;*/
+  /*border-left: solid 2px #222;*/
+  text-decoration: none;
+}
+
+main {
+  align: center;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
