@@ -21,7 +21,7 @@ header {
   background-color: #222;
   /*background-image: ;*/
   background:
-    linear-gradient(rgba(30,120,200,1.0),rgba(30,120,200,1.0)),
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
     url(../banner.jpg) no-repeat center;
   background-size: cover;
   color: #fff;
@@ -40,6 +40,22 @@ img.cv-photo {
   left: 70vw;
 }
 
+header .name {
+  font-weight: normal;
+}
+
+header .surname {
+  font-weight: bolder;
+}
+
+header .rule {
+  /*width: 5cm;*/
+  height: 0;
+  margin: 0;
+  padding: 0 5rem;
+  border: solid 5px black;
+}
+
 footer {
   background-color: #222;
   /*background:
@@ -51,12 +67,32 @@ footer {
   padding: 2rem 20vw;
 }
 
+footer {
+  font-weight: bold;
+  font-size: small;
+}
+
+footer div.copyright{
+  display: inline;
+  /*text-align: left;*/
+  /*float: left;*/
+}
+
+footer div.note {
+  display: inline;
+  text-align: right;
+  float: right;
+}
+
 nav {
   margin: 0;
-  padding: 1rem;
-  /*background-color: #ccc;*/
-  background: linear-gradient(#aaa,#fff);
+  padding: 2rem;
+  background-color: #222;
+  color: white;
+  /*background: linear-gradient(#aaa,#fff);*/
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -88,4 +124,50 @@ main {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+h1.cv-section {
+  color: #35a;
+  border-bottom: solid 2px #222;
+  padding: 0.2rem 0;
+  margin: 1rem 0;
+}
+
+div.cv-education-location,
+div.cv-work-location {
+  background-color: #eef;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+div.cv-education-item,
+div.cv-work-item {
+  display: block;
+  /*border: solid 1px #222;*/
+  margin: 1rem;
+}
+
+div.cv-education-item-time,
+div.cv-work-item-time {
+  display: table-cell;
+  width: 15%;
+  font-style: italic;
+  font-size: small;
+  /*float: left;*/
+  border-right: solid 2px #222;
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+div.cv-education-item-content,
+div.cv-work-item-content {
+  width: 50%;
+  /*float: left;*/
+  display: table-cell;
+  /*margin: 5rem;*/
+  padding: 0.5rem 2rem;
+  /*border: solid 1px #222;*/
 }

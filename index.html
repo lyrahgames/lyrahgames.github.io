@@ -7,11 +7,21 @@
 </head>
 <body>
   <header>
-    <h1>Markus Pawellek</h1>
-    <b>A Homepage Designed by Myself</b>
+    <h1><span class="name">Markus</span> <span class="surname">Pawellek</span></h1>
+    Curriculum Vitae
+    <!-- <b>A Homepage Designed by Myself</b> -->
+    <address>
+      Arvid-Harnack-Straße 12
+      07743 Jena
+      Thuringia, Germany
+    </address>
+    <div class="phone">+49 173 7262913</div>
+    <div class="email">markus.pawellek@mailbox.org</div>
+    <div class="github">lyrahgames</div>
+    <div class="birth">Born on May 7th, 1995 in Meiningen Germany</div>
     <div class="cv-photo"><img src="photo.png" class="cv-photo"></div>
   </header>
-  <nav class="site-nav">
+  <nav>
     <ul>
       <a href="#"><li>Home</li></a>
       <!-- <a href="#"><li>Blog</li></a> -->
@@ -25,20 +35,166 @@
     </ul>
   </nav>
   <main>
+    <!-- <section> -->
+      <!-- <h1>Curriculum Vitae</h1> -->
     <section>
-      <h1>Curriculum Vitae</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h1 class="cv-section">Education</h1>
+
+      <div class="cv-education-location">Public High School <q>Goetheschule Ilmenau</q></div>
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">Sep. 2009 - Jun. 2013</div>
+        <div class="cv-education-item-content">
+          <h1>General University Entrance Qualification (Abitur, Grade 1.2)</h1>
+          <ul>
+            <li>Taking additional advanced courses in mathematics and natural sciences</li>
+            <li>Graduation with best scores in advanced courses maths, physics, and informatics</li>
+            <li>Writing of two term papers on ray tracing and compiler construction using C++</li>
+            <li>Winning of several prizes in mathematical and physical olympiads</li>
+            <li>Enthusiastic participation in the school's electronics club</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-education-location">Technical University Ilmenau</div>
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">Oct. 2011 - Sep. 2012</div>
+        <div class="cv-education-item-content">
+          <h1>Early Studies: Experimental Physics (1.0)</h1>
+        </div>
+      </div>
+
+      <div class="cv-education-location">Friedrich Schiller University Jena</div>
+
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">Oct. 2013 - Sep. 2017</div>
+        <div class="cv-education-item-content">
+          <h1>B.Sc. Physics (1.7)</h1>
+          <p>
+            Bachelor thesis <q>Generation of Irradiance Maps</q> (1.3) on caching the diffuse light distribution of a scene to enable real-time rendering using a ray tracer implemented in C++
+          </p>
+        </div>
+      </div>
+
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">Oct. 2015 - Sep. 2018</div>
+        <div class="cv-education-item-content">
+          <h1>B.Sc. Mathematics (1.4)</h1>
+          <ul>
+            <li>Specialization on theoretical informatics</li>
+            <li>Bachelor thesis <q>Implementation of a Finite Element Method on a GPU</q> (1.0) on numerical solutions to the ideal wave equation on two-dimensional manifolds and its implementation in C++ on modern graphics processors using CUDA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">Oct. 2017 - Mai 2020</div>
+        <div class="cv-education-item-content">
+          <h1>M.Sc. Physics (1.1)</h1>
+          <ul>
+            <li>Specialization on quantum and gravitational theory</li>
+            <li>Master thesis <q>Design and Implementation of Vectorized Pseudorandom Number Generators and their Application to Simulations of Photon Propagation</q> (1.1) on exploiting SIMD capabilities of modern processors in C++ to speed up random number generation while providing a well-designed interface</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-education-item">
+        <div class="cv-education-item-time">since Oct. 2019</div>
+        <div class="cv-education-item-content">
+          <h1>M.Sc. Mathematics</h1>
+        </div>
+      </div>
     </section>
+
+    <section>
+      <h1 class="cv-section">Skills</h1>
+      <section>
+        <h1>Computer Software Tools</h1>
+        <section>
+          <h1>C++</h1>
+        </section>
+        <section>
+          <h1>Further Languages</h1>
+        </section>
+        <section>
+          <h1>Further Tools</h1>
+        </section>
+        <section>
+          <h1>DevOps</h1>
+        </section>
+        <section>
+          <h1>Operating Systems</h1>
+        </section>
+        <section>
+          <h1>Web Design</h1>
+        </section>
+      </section>
+      <section>
+        <h1>Languages</h1>
+      </section>
+    </section>
+
+    <section>
+      <h1 class="cv-section">Work Experience</h1>
+
+      <div class="cv-work-location">
+        Fraunhofer ITWM Kaiserslautern: Competence Center High Performance Computing (CC HPC)
+      </div>
+      <div class="cv-work-item">
+        <div class="cv-work-item-time">Sep. 2012</div>
+        <div class="cv-work-item-content">
+          <h1>Internship</h1>
+          <p>Implementation of a ray tracer in C++ accelerated by a BVH, created using Morton codes</p>
+        </div>
+      </div>
+      <div class="cv-work-item">
+        <div class="cv-work-item-time">Oct. 2013 - Jun. 2017</div>
+        <div class="cv-work-item-content">
+          <h1>Research Assistant</h1>
+          <ul>
+            <li>Improving knowledge and experience concerning program optimization in C++ and C, as well as compiler construction, computer hardware, parallel computing, and computer graphics</li>
+            <li>Implementation of real-time ray tracers on CPU and GPU in C++ while using state-of-the-art procedures and professional tools, such as OpenGL, Qt, and CUDA</li>
+            <li>Support of the development of a statistics-based analyzation tool for seismic data by implementing histograms, kernel density estimators and color tables in C++ by using Qt</li>
+            <li>Implementation of a serialization and deserialization process in C++ to read and write the Wavefront OBJ file format</li>
+            <li>Editing and revising of various scene models using Blender</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-work-location">
+        Friedrich Schiller University Jena
+      </div>
+      <div class="cv-work-item">
+        <div class="cv-work-item-time">Oct. 2017 - Apr. 2018</div>
+        <div class="cv-work-item-content">
+          <h1>Research/Teaching Assistant</h1>
+          <ul>
+            <li>Seminar teacher <q>Mathematical Methods in Physics</q></li>
+            <li>Creation of exercise sheets and sample solutions in LaTeX</li>
+            <li>Setting up an automatically compiling, LaTeX-based database for execise sheets</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-work-item">
+        <div class="cv-work-item-time">Sep. 2018 and Oct. 2019</div>
+        <div class="cv-work-item-content">
+          <h1>Course Instructor</h1>
+          <ul>
+            <li>Elective introductory course for university students on C++ (6 hours a day for two weeks)</li>
+            <li>Elective introductory course for university students on LaTeX (6 hours a day for one week)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="cv-section">Further Interests and Activities</h1>
+    </section>
+    <!-- </section> -->
   </main>
   <footer>
-    <small><b>Copyright &copy 2020 by Markus Pawellek</b></small>
+    <div class="copyright">Copyright &copy 2020 by Markus Pawellek</div>
+    <div class="note">Markus Pawellek | Curriculum Vitae</div>
   </footer>
 </body>
 </html>
