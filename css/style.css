@@ -21,12 +21,12 @@ header {
   background-color: #222;
   /*background-image: ;*/
   background:
-    linear-gradient(rgba(0,0,0,1.0),rgba(0,0,0,1.0)),
+    linear-gradient(rgba(30,120,200,1.0),rgba(30,120,200,1.0)),
     url(../banner.jpg) no-repeat center;
   background-size: cover;
   color: #fff;
   /*filter: grayscale(100%);*/
-  background-blend-mode: saturation;
+  background-blend-mode: multiply;
   /*border-bottom: solid 5px #ccc;*/
 }
 
@@ -34,7 +34,7 @@ img.cv-photo {
   /*display: block;*/
   border-radius: 50%;
   width: 5cm;
-  border: solid 3px #ddd;
+  border: solid 3px #222;
   position: absolute;
   top: 4rem;
   left: 70vw;
@@ -42,6 +42,11 @@ img.cv-photo {
 
 footer {
   background-color: #222;
+  /*background:
+    linear-gradient(rgba(34,34,34,1.0),rgba(5,30,80,1.0)),
+    url(../banner.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;*/
   color: white;
   padding: 2rem 20vw;
 }
@@ -50,7 +55,7 @@ nav {
   margin: 0;
   padding: 1rem;
   /*background-color: #ccc;*/
-  background: linear-gradient(#ccc,#fff);
+  background: linear-gradient(#aaa,#fff);
   text-align: center;
 }
 
@@ -71,6 +76,9 @@ nav li {
   /*border: solid 2px black;*/
   /*border-left: solid 2px #222;*/
   text-decoration: none;
+  font-weight: bold;
+  font-size: 110%;
+  /*font-family: sans-serif;*/
 }
 
 main {
