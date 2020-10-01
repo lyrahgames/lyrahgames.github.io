@@ -18,13 +18,14 @@ p {
 header {
   margin: 0;
   border-width: 0;
-  padding: 4rem 20vw;
+  padding: 6rem 20vw;
   background-color: #222;
   /*background-image: ;*/
   background:
     linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
     url(../banner.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   /*filter: grayscale(100%);*/
   background-blend-mode: multiply;
@@ -34,27 +35,106 @@ header {
 img.cv-photo {
   /*display: block;*/
   border-radius: 50%;
-  width: 5cm;
-  border: solid 3px #222;
+  width: 6cm;
+  border: solid 10px #222;
   position: absolute;
-  top: 4rem;
-  left: 70vw;
+  top: 20rem;
+  left: 65vw;
+  z-index: 1;
 }
 
-header .name {
-  font-weight: normal;
+.cv-header {
+  width: 45rem;
+  text-align: center;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
-header .surname {
+.cv-header-name {
+  border-bottom: solid 2px white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cv-header-name-first {
+  font-weight: lighter;
+}
+
+.cv-header-name-last {
   font-weight: bolder;
 }
 
-header .rule {
-  /*width: 5cm;*/
-  height: 0;
+.cv-header-cv {
+  display: block;
+  font-family: cursive;
+  font-size: large;
+  /*margin: 1rem;*/
+  margin-top: -1.8rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    url(../banner.jpg) no-repeat center,
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0));
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  font-weight: bold;
+}
+
+.cv-header-info {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 1.5rem;
+  font-size: normal;
+  font-weight: bold;
+}
+
+.cv-header-info-location {
+  width: 50%;
+  /*height: 7rem;*/
+  /*display: table-cell;*/
+  /*display: inline;*/
+  text-align: right;
   margin: 0;
-  padding: 0 5rem;
-  border: solid 5px black;
+  padding: 1.5rem;
+  border-right: solid 2px white;
+  box-sizing: border-box;
+}
+
+.cv-header-info-contact {
+  font-family: monospace;
+  width: 50%;
+  /*height: 7rem;*/
+  /*display: table-cell;*/
+  /*display:inline-block;*/
+  text-align: left;
+  padding: 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+i {
+  width: 1rem;
+  text-align: center;
+}
+
+.cv-header-info-contact-email {
+}
+
+.cv-header-info-location-postcode {
+  display: inline;
+}
+.cv-header-info-location-city {
+  display: inline-block;
+}
+
+.cv-header-birth {
+  font-style: italic;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 footer {
@@ -94,6 +174,7 @@ nav {
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 0;
 }
 
 nav ul {
@@ -143,6 +224,11 @@ div.cv-work-location {
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 5px;
+  /*background: url("../banner.jpg") no-repeat center, rgba(120,200,255,1.0);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: white;*/
 }
 
 div.cv-education-item,
