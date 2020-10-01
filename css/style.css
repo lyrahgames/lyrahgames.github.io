@@ -1,6 +1,7 @@
 html {
   font-family: Helvetica;
   font-size: 11pt;
+  line-height: 1.5rem;
   color: #222;
   quotes: "\00BB" "\00AB";
 }
@@ -30,6 +31,20 @@ header {
   /*filter: grayscale(100%);*/
   background-blend-mode: multiply;
   /*border-bottom: solid 5px #ccc;*/
+}
+
+div.outro {
+  margin: 0;
+  /*padding: 1rem;*/
+  display: block;
+  height: 10rem;
+  background:
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    url(../banner.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  background-blend-mode: multiply;
 }
 
 img.cv-photo {
@@ -163,6 +178,7 @@ footer div.note {
   display: inline;
   text-align: right;
   float: right;
+  font-variant: small-caps;
 }
 
 nav {
@@ -209,7 +225,7 @@ main {
 }
 
 h1.cv-section {
-  color: #35a;
+  color: #137;
   border-bottom: solid 2px #222;
   padding: 0.2rem 0;
   margin: 1rem 0;
@@ -218,17 +234,24 @@ h1.cv-section {
 div.cv-education-location,
 div.cv-skills-kind,
 div.cv-work-location {
-  background-color: #eef;
+  background-color: #eee;
+  /*background: linear-gradient(#aaa, #fff);*/
+  /*color: white;*/
   font-weight: bold;
   font-style: italic;
+  font-size: larger;
   padding: 0.5rem;
   margin: 1rem 0;
-  border-radius: 5px;
-  /*background: url("../banner.jpg") no-repeat center, rgba(120,200,255,1.0);
-  background-size: cover;
-  background-blend-mode: multiply;
+  border-radius: 10px 10px;
+  /*border-bottom-right-radius: 0px 0%;*/
+  /*border-top-right-radius: 0px 0%;*/
+  /*background:
+      linear-gradient(to right, rgba(255,255,255,1.0) 40%,rgba(0,0,255,0.2)),
+      url(../banner.jpg) no-repeat center;
+  background-blend-mode: lighten;
   background-attachment: fixed;
-  color: white;*/
+  background-size: contain;
+  color: black;*/
 }
 
 div.cv-education-item,
@@ -250,12 +273,20 @@ div.cv-work-item-time {
   /*display: inline;*/
   width: 20%;
   font-style: italic;
-  font-size: small;
+  font-size: normal;
   /*float: left;*/
   border-right: solid 2px #222;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   text-align: right;
   /*margin: 0;*/
+}
+
+div.cv-skills-item-name {
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: larger;
+  font-weight: bold;
+  color: #137;
 }
 
 div.cv-education-item-content,
@@ -271,4 +302,41 @@ div.cv-work-item-content {
   padding: 0.5rem 2rem;
   /*margin: 0;*/
   /*border: solid 1px #222;*/
+}
+
+
+div.cv-education-item h1,
+div.cv-skills-item h1,
+div.cv-work-item h1,
+div.cv-interests-item h1 {
+  font-size: larger;
+  font-variant: small-caps;
+  color: #137;
+}
+
+div.cv-skills-item-level h1 {
+  font-variant: normal;
+  font-size: larger;
+  color: #222;
+  display: inline-flex;
+}
+
+div.cv-skills-item-level-duration {
+  /*display: inline-block;*/
+  padding: 0.5rem 0;
+  float: right;
+  /*display: inline-flex;*/
+  /*align-self: right;*/
+  /*align-content: space-between;*/
+  color: #555;
+}
+
+main ul {
+  padding-left: 1rem;
+  /*line-height: 1.5rem;*/
+}
+
+main li {
+  text-align: justify;
+  font-size: normal;
 }
