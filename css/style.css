@@ -20,6 +20,7 @@ p {
 
 header {
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   vertical-align: middle;
   box-sizing: border-box;
@@ -38,7 +39,38 @@ header {
   color: #fff;
   /*filter: grayscale(100%);*/
   background-blend-mode: multiply;
-  border-bottom: solid 10px #222;
+  /*border-bottom: solid 10px #222;*/
+}
+
+.site-background {
+  background:
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    url(../banner.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.site-header-nav-transition,
+.site-background {
+  display: block;
+  margin: 0;
+  height: 15vh;
+  padding: 0;
+}
+
+.site-header-nav-transition {
+  background: linear-gradient(rgba(32,32,32,0), rgba(32,32,32,1));
+  margin-top: -15vh;
+  /*background-color: red;*/
+  /*position: static;*/
+  /*width: 100vw;*/
+  /*height: 15vh;*/
+  /*left: 0;*/
+  /*top: -15vh;*/
+  /*padding: 0;*/
+  /*margin: -15vh;*/
+  /*z-index: 99;*/
 }
 
 div.outro {
@@ -53,7 +85,19 @@ div.outro {
   background-attachment: fixed;
   color: #fff;
   background-blend-mode: multiply;
-  border-top: solid 10px #222;
+  /*border-top: solid 10px #222;*/
+}
+
+.site-footer-outro-transition {
+  display: block;
+  position: absolute; /* Make sure it is drawn last. */
+  margin: 0;
+  width: 100%;
+  height: 15vh;
+  padding: 0;
+  background: linear-gradient(rgba(32,32,32,1), rgba(32,32,32,0));
+  /*background-color: red;*/
+  /*margin-bottom: -10vh;*/
 }
 
 /*div.cv-photo {
