@@ -45,7 +45,7 @@ div.outro {
   margin: 0;
   /*padding: 1rem;*/
   display: block;
-  height: 50vh;
+  height: 30vh;
   background:
     linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
     url(../banner.jpg) no-repeat center;
@@ -201,7 +201,7 @@ footer div.copyright {
   /*text-align: left;*/
   /*float: left;*/
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   padding-left: 20vw;
   width: 15vw;
 }
@@ -211,10 +211,11 @@ footer div.note {
   text-align: right;
   /*float: right;*/
   font-variant: small-caps;
-  padding: 1.5rem;
+  padding: 1rem;
   padding-right: 20vw;
   background-color: #222;
   width: 15vw;
+  margin: 0;
   /*margin-left: auto;*/
 }
 
@@ -223,8 +224,8 @@ div.site-footer-tab-right {
   /*height: 2rem;*/
   display: inline;
   margin: 0;
-  padding: 1rem;
-  width: 3rem;
+  /*padding: 1rem;*/
+  width: 4rem;
   /*height: 3.5rem;*/
   background-color: #222;
   clip-path: polygon(
@@ -335,16 +336,19 @@ div.site-footer-tab-right {
 }
 
 div.site-footer-tab-left {
-  margin-left: auto;
+  /*margin-left: auto;*/
   /*float: right;*/
   /*height: 2rem;*/
-  margin: 0;
-  padding: 1rem;
-  width: 3rem;
+  margin: 0rem;
+  margin-right: -0.1rem;
+  /*padding: 0.5rem;*/
+  width: 4rem;
   display: inline;
   /*height: 3.5rem;*/
   background-color: #222;
   clip-path: polygon(
+    100% 0,
+    100% 100%,
     0 100%,
     0% 99.3307%,
     1% 99.2608%,
