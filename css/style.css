@@ -234,6 +234,8 @@ footer {
   font-size: small;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  bottom: 0;
 }
 
 .site-footer-left,
@@ -260,7 +262,7 @@ footer div.note {
   padding: 1rem;
   padding-right: 20vw;
   background-color: #222;
-  width: 15vw;
+  /*width: 20vw;*/
   margin: 0;
   /*margin-left: auto;*/
 }
@@ -1173,4 +1175,43 @@ li.site-aside-nav-end {
   position: absolute;
   right: 10vw;
   top: 0;
+}
+
+aside.site-main-aside {
+  /*position: sticky;*/
+  /*top: 0vh;*/
+  /*left: -5vw;*/
+  /*width: 10vw;*/
+  /*color: white;*/
+  /*font-weight: bold;*/
+  /*font-size: small;*/
+}
+
+aside.site-main-aside ul {
+  /*position: absolute;*/
+  /*left: -18vw;*/
+  /*top: 0vh;*/
+  /*width: 15vw;*/
+  margin: 0;
+  padding: 0;
+}
+
+aside.site-main-aside ul li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 1rem;
+}
+
+aside.site-main-aside ul li a {
+  text-decoration: none;
+}
+
+aside.site-main-aside ul li a:hover {
+  text-shadow: 0px 0 5px #222;
+  color: white;
+}
+
+aside.site-main-aside ul li a:visited {
+  color: white;
 }
