@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -54,7 +54,13 @@
       <!-- </a> -->
       <!-- <a href="#"><li>Blog</li></a> -->
       <!-- <a href="#"> -->
-        <li>CV</li>
+        <li style="padding:0;">
+          <ul>
+            <li style="background: linear-gradient(#222,#57f);" class="site-nav-left"></li>
+            <li style="background: linear-gradient(#222,#57f);">CV</li>
+            <li style="background: linear-gradient(#222,#57f);" class="site-nav-right"></li>
+          </ul>
+        </li>
       <!-- </a> -->
       <!-- <a href="#"> -->
         <li>Projects</li>
@@ -70,12 +76,23 @@
       <!-- <a href="#"><li></li></a> -->
       <li class="site-nav-right"></li>
     </ul>
+    <div class="site-nav-round-corner"></div>
+    <aside class="site-aside-nav">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Work">Work Experience</a></li>
+        <li><a href="#Interests">Further Interests and Activities</a></li>
+        <li class="site-aside-nav-end"></li>
+      </ul>
+    </aside>
   </nav>
   <main>
     <!-- <section> -->
       <!-- <h1>Curriculum Vitae</h1> -->
     <section>
-      <h1 class="cv-section">Education</h1>
+      <h1 class="cv-section" id="Education">Education</h1>
 
       <div class="cv-education-location">Public High School <q>Goetheschule Ilmenau</q></div>
       <div class="cv-education-item">
@@ -143,7 +160,7 @@
     </section>
 
     <section>
-      <h1 class="cv-section">Skills</h1>
+      <h1 class="cv-section" id="Skills">Skills</h1>
 
       <div class="cv-skills-kind">Computer Software Tools</div>
       <div class="cv-skills-item">
@@ -235,7 +252,7 @@
     </section>
 
     <section>
-      <h1 class="cv-section">Work Experience</h1>
+      <h1 class="cv-section" id="Work">Work Experience</h1>
 
       <div class="cv-work-location">
         Fraunhofer ITWM Kaiserslautern: Competence Center High Performance Computing (CC HPC)
@@ -289,7 +306,7 @@
     </section>
 
     <section>
-      <h1 class="cv-section">Further Interests and Activities</h1>
+      <h1 class="cv-section" id="Interests">Further Interests and Activities</h1>
 
       <div class="cv-interests-item">
         <div class="cv-interests-item-kind">
