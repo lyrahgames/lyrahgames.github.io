@@ -131,6 +131,26 @@ div.cv-header {
   /*margin-right: auto;*/
 }
 
+.cv-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cv-header a:hover {
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+
+main a {
+  text-decoration: none;
+  color: #777;
+}
+
+main a:hover {
+  color: #222;
+  text-shadow: 0 0 10px #222;
+}
+
 .cv-header-name {
   border-bottom: solid 2px white;
   padding: 1rem;
@@ -948,11 +968,19 @@ aside.site-aside-nav ul li {
   /*margin: 1rem;*/
 }
 
+aside.site-aside-nav ul li:hover {
+  background: linear-gradient(to right, #222, #57f);
+}
+
 aside.site-aside-nav a {
   padding: 0;
   margin: 0;
   color: inherit;
   text-decoration: none;
+}
+
+aside.site-aside-nav a:hover {
+  text-shadow: 0 0 5px white;
 }
 
 li.site-aside-nav-end {
@@ -1205,13 +1233,9 @@ aside.site-main-aside ul li {
 
 aside.site-main-aside ul li a {
   text-decoration: none;
+  color: white;
 }
 
 aside.site-main-aside ul li a:hover {
-  text-shadow: 0px 0 5px #222;
-  color: white;
-}
-
-aside.site-main-aside ul li a:visited {
-  color: white;
+  text-shadow: 0px 0 10px white;
 }
