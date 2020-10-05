@@ -282,7 +282,7 @@ footer div.note {
   display: inline;
   text-align: right;
   /*float: right;*/
-  font-variant: small-caps;
+  /*font-variant: small-caps;*/
   padding: 1rem;
   padding-right: 5vw;
   background-color: #222;
