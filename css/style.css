@@ -944,39 +944,46 @@ main li {
 }
 
 aside.site-aside-nav {
+  color: #222;
   position: absolute;
-  width: 10vw;
+  width: 12vw;
+  padding: 2rem;
   /*left: 89.3vw;*/
-  top: 0vh;
-  right: 0vw;
+  top: 0rem;
+  right: 2vw;
+  font-weight: bolder;
   /*left: 50vw;*/
   /*float: right;*/
   /*bottom: 80vh;*/
   /*right: 50vw;*/
 }
 
+aside.site-aside-nav h1 {
+  border-bottom: solid 2px #222;
+}
+
 aside.site-aside-nav ul {
   display: block;
   padding: 0;
   margin: 0;
+  border-bottom: solid 2px #222;
 }
 
 aside.site-aside-nav ul li {
   display: block;
-  list-style: none;
-  color: white;
-  background-color: #222;
+  color: #222;
+  background-color: transparent;
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: bold;
   /*border: solid 1px #222;*/
   /*border-radius: 10px;*/
   /*margin: 1rem;*/
 }
 
-aside.site-aside-nav ul li:hover {
+/*aside.site-aside-nav ul li:hover {
   background: linear-gradient(to right, #222, #57f);
-}
+}*/
 
 aside.site-aside-nav a {
   padding: 0;
@@ -986,7 +993,7 @@ aside.site-aside-nav a {
 }
 
 aside.site-aside-nav a:hover {
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px #222;
 }
 
 li.site-aside-nav-end {
@@ -1203,7 +1210,7 @@ li.site-aside-nav-end {
     100% 100%,
     100% 0
   );
-  background-color: #222;
+  /*background-color: #222;*/
   width: 2vmax;
   height: 2vmax;
   position: absolute;
