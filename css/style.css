@@ -254,8 +254,10 @@ footer {
   font-size: small;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  bottom: 0;
+  /*position: sticky;*/
+  /*position: relative;*/
+  /*z-index: 1;*/
+  /*bottom: 0;*/
 }
 
 .site-footer-left,
@@ -270,8 +272,10 @@ footer div.copyright {
   /*float: left;*/
   margin: 0;
   padding: 1rem;
-  padding-left: 20vw;
+  padding-left: 5vw;
   width: 15vw;
+  position: relative;
+  z-index: 1;
 }
 
 footer div.note {
@@ -280,11 +284,13 @@ footer div.note {
   /*float: right;*/
   font-variant: small-caps;
   padding: 1rem;
-  padding-right: 20vw;
+  padding-right: 5vw;
   background-color: #222;
-  /*width: 20vw;*/
+  width: 15vw;
   margin: 0;
   /*margin-left: auto;*/
+  position: relative;
+  z-index: 1;
 }
 
 div.site-footer-tab-right {
@@ -1206,13 +1212,25 @@ li.site-aside-nav-end {
 }
 
 aside.site-main-aside {
-  /*position: sticky;*/
+  display: block;
+  background-color: #555;
+  /*background-color: rgba(64,64,64,0.9);*/
+  /*background: linear-gradient(#fff,#222);*/
+  text-align: center;
+  vertical-align: middle;
+  /*height: 3vmax;*/
+  padding: 1rem;
+  margin: 0;
+  margin-bottom: -3.5rem;
+  position: sticky;
+  bottom: 0;
   /*top: 0vh;*/
   /*left: -5vw;*/
   /*width: 10vw;*/
   /*color: white;*/
   /*font-weight: bold;*/
   /*font-size: small;*/
+  z-index: 0;
 }
 
 aside.site-main-aside ul {
@@ -1222,6 +1240,8 @@ aside.site-main-aside ul {
   /*width: 15vw;*/
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 3;
 }
 
 aside.site-main-aside ul li {
