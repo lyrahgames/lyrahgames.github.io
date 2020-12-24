@@ -239,8 +239,8 @@ i {
 }
 
 footer {
-  /*background-color: #222;*/
-  background: transparent;
+  background-color: #222;
+  /*background: transparent;*/
   /*background:
     linear-gradient(rgba(34,34,34,1.0),rgba(5,30,80,1.0)),
     url(../banner.jpg) no-repeat center;
@@ -273,7 +273,7 @@ footer div.copyright {
   margin: 0;
   padding: 1rem;
   padding-left: 5vw;
-  width: 15vw;
+  /*width: 15vw;*/
   position: relative;
   z-index: 1;
 }
@@ -286,7 +286,7 @@ footer div.note {
   padding: 1rem;
   padding-right: 5vw;
   background-color: #222;
-  width: 15vw;
+  /*width: 15vw;*/
   margin: 0;
   /*margin-left: auto;*/
   position: relative;
@@ -533,8 +533,8 @@ nav {
   margin: 0;
   margin-top: -1px;
   padding: 0 auto;
-  /*background-color: #222;*/
-  background: transparent;
+  background-color: #222;
+  /*background: transparent;*/
   color: white;
   /*background: linear-gradient(#aaa,#fff);*/
   /*text-align: center;*/
@@ -576,6 +576,8 @@ nav li {
   background: #222;
   /*display: table-cell;*/
   padding: 1.2rem;
+  width: 6rem;
+  text-align: center;
   margin: 0;
   list-style-type: none;
   /*height: 0rem;*/
@@ -812,9 +814,15 @@ main {
   /*align: center;*/
   /*margin: 1rem 1rem;*/
   padding: 1rem;
-  width: 60vw;
+  /*width: 70rem;*/
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 70rem) {
+  main {
+    width: 70rem;
+  }
 }
 
 h1.cv-section {
@@ -860,10 +868,19 @@ div.cv-education-item,
 div.cv-interests-item,
 div.cv-skills-item,
 div.cv-work-item {
-  /*display: block;*/
-  display: flex;
+  display: block;
+  /*display: flex;*/
   /*border: solid 1px #222;*/
   margin: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+  div.cv-education-item,
+  div.cv-interests-item,
+  div.cv-skills-item,
+  div.cv-work-item {
+    display: flex;
+  }
 }
 
 div.cv-education-item-time,
@@ -873,14 +890,30 @@ div.cv-skills-item-kind,
 div.cv-work-item-time {
   /*display: table-cell;*/
   /*display: inline;*/
-  width: 20%;
+  /*width: 20%;*/
   font-style: italic;
   font-size: normal;
   /*float: left;*/
-  border-right: solid 2px #222;
-  padding: 1.5rem 2rem;
-  text-align: right;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0rem;
+  text-align: left;
   /*margin: 0;*/
+  /*border-bottom: solid 1px #555;*/
+  /*background-color: #f9f9f9;*/
+}
+
+@media screen and (min-width: 40rem) {
+  div.cv-education-item-time,
+  div.cv-interests-item-kind,
+  div.cv-skills-item-name,
+  div.cv-skills-item-kind,
+  div.cv-work-item-time {
+    text-align: right;
+    padding: 1.5rem 2rem;
+    border-bottom-width: 0;
+    border-right: solid 2px #222;
+    width: 20%;
+  }
 }
 
 div.cv-skills-item-name {
@@ -898,12 +931,22 @@ div.cv-skills-item-level,
 div.cv-work-item-content {
   /*display: table-cell;*/
   /*display: inline-block;*/
-  width: 70%;
+  /*width: 70%;*/
   /*float: left;*/
   /*margin: 5rem;*/
   padding: 0.5rem 2rem;
   /*margin: 0;*/
   /*border: solid 1px #222;*/
+}
+
+@media screen and (min-width: 40rem) {
+  div.cv-education-item-content,
+  div.cv-interests-item-content,
+  div.cv-skills-item-content,
+  div.cv-skills-item-level,
+  div.cv-work-item-content {
+    width: 70%;
+  }
 }
 
 
@@ -945,7 +988,8 @@ main li {
 
 aside.site-aside-nav {
   color: #222;
-  position: absolute;
+  /*position: absolute;*/
+  position: sticky;
   width: 12vw;
   padding: 2rem;
   /*left: 89.3vw;*/
@@ -1228,7 +1272,8 @@ aside.site-main-aside {
   /*height: 3vmax;*/
   padding: 1rem;
   margin: 0;
-  margin-bottom: -3.5rem;
+  /*margin-bottom: -3.5rem;*/
+  margin-bottom: -0.01rem;
   position: sticky;
   bottom: 0;
   /*top: 0vh;*/
