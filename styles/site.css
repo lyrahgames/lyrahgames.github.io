@@ -45,39 +45,83 @@ p {
 .site-nav {
   margin: 0;
   margin-top: -1px;
-  padding: 0 auto;
+  padding: 0;
   background-color: #222;
   color: white;
   position: sticky;
   top: -1px;
   z-index: 0;
-  display: block;
-}
-
-.site-nav ul {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
 
 .site-nav a {
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
   display: inline;
+  margin: 0;
+  padding: 1.5rem 2rem;
+  width: 5rem;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
 }
 
-.site-nav li {
-  background: #222;
-  padding: 1.2rem;
-  width: 6rem;
-  text-align: center;
-  margin: 0;
-  list-style-type: none;
-  font-weight: bold;
-  font-size: normal;
+.site-nav a:hover {
+  text-shadow: 0 0 10px white;
+}
+
+.site-nav a.current {
+  background: linear-gradient(#222, #57f);
+}
+
+.site-nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    justify-content: space-between;
+  }
+
+  .site-nav a {
+    display: none;
+  }
+
+  .site-nav a.current {
+    background: unset;
+    background-color: #222;
+    display: block;
+    text-align: left;
+  }
+
+  .site-nav a.icon {
+    display: block;
+    width: 2.5rem;
+  }
+
+  .site-nav.responsive {
+    position: sticky;
+    flex-direction: column;
+  }
+
+  .site-nav.responsive a.current {
+    background: linear-gradient(#222, #57f);
+  }
+
+  .site-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    text-align: center;
+  }
+
+  .site-nav.responsive a {
+    display: block;
+    text-align: left;
+    width: 100vw;
+  }
 }
 
 .site-transition-header-nav {
@@ -96,9 +140,9 @@ p {
   min-height: 50vh;
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 60rem) {
   .site-content {
-    width: 70rem;
+    width: 60rem;
   }
 }
 
@@ -116,7 +160,7 @@ p {
 .site-footer-right {
   display: flex;
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   padding-left: 5vw;
 }
 

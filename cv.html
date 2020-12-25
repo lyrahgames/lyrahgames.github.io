@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
 
+  <script src="scripts/site.js"></script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
 
   <title>Curriculum Vitae | Markus Pawellek | lyrahgames.github.io</title>
   <meta name="description" content="Curriculum Vitae on the Homepage of Markus Pawellek">
@@ -53,38 +56,18 @@
   </header>
   <!-- <div class="site-background"></div> -->
   <div class="site-header-nav-transition"></div>
-  <nav>
-    <ul>
-      <!-- <li class="site-nav-left"></li> -->
-      <!-- <a href="#"> -->
-        <li>Home</li>
-      <!-- </a> -->
-      <!-- <a href="#"><li>Blog</li></a> -->
-      <!-- <a href="#"> -->
-        <!-- <li style="padding:0;"> -->
-          <!-- <ul> -->
-            <!-- <li style="background: linear-gradient(#222,#57f);" class="site-nav-left"></li> -->
-            <li style="background: linear-gradient(#222,#57f);">CV</li>
-            <!-- <li style="background: linear-gradient(#222,#57f);" class="site-nav-right"></li> -->
-          <!-- </ul> -->
-        <!-- </li> -->
-      <!-- </a> -->
-      <!-- <a href="#"> -->
-        <li>Projects</li>
-      <!-- </a> -->
-      <!-- <a href="#"><li>Music</li></a> -->
-      <!-- <a href="#"><li>Publications</li></a> -->
-      <!-- <a href="#"> -->
-        <li>Contact</li>
-      <!-- </a> -->
-      <!-- <a href="#"> -->
-        <li>About</li>
-      <!-- </a> -->
-      <!-- <a href="#"><li></li></a> -->
-      <!-- <li class="site-nav-right"></li> -->
-    </ul>
-    <!-- <div class="site-nav-round-corner"></div> -->
+
+  <nav class="site-nav" id="site-nav">
+    <a href="index.html">Home</a>
+    <a class="current" href="#top">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="site_nav_responsive_toggle()">
+      <i class="fa fa-bars"></i>
+    </a>
   </nav>
+
   <main>
     <!-- <aside class="site-aside-nav">
       <h1>Table of Contents</h1>

@@ -1,9 +1,8 @@
-console.log('Included \'site.js\'.');
-
-function execute() {
-  var text = 'Width x Height: ' + screen.width + ' x ' + screen.height +
-      '<br>' +
-      'Usable: ' + screen.availWidth + ' x ' + screen.availHeight + '<br>' +
-      'Color Depth: ' + screen.colorDepth;
-  document.querySelector('p').innerHTML = text;
+function site_nav_responsive_toggle() {
+  var x = document.getElementById('site-nav');
+  if (x.className === 'site-nav') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'site-nav';
+  }
 }
