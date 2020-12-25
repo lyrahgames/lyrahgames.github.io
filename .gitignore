@@ -3,6 +3,8 @@
 
 !*.html
 !*.css
+!*.js
+
 !*.jpg
 !*.png
 

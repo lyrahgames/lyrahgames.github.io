@@ -1,0 +1,155 @@
+html {
+  font-family: Helvetica;
+  font-size: 11pt;
+  line-height: 1.5rem;
+  color: #222;
+  quotes: "\00BB" "\00AB";
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 2000px){
+  html {
+    font-size: 22pt;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.site-header {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  border-width: 0;
+  height: 50vh;
+  background-color: #222;
+  background:
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    url("/images/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  background-blend-mode: multiply;
+}
+
+.site-nav {
+  margin: 0;
+  margin-top: -1px;
+  padding: 0 auto;
+  background-color: #222;
+  color: white;
+  position: sticky;
+  top: -1px;
+  z-index: 0;
+  display: block;
+}
+
+.site-nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.site-nav li {
+  background: #222;
+  padding: 1.2rem;
+  width: 6rem;
+  text-align: center;
+  margin: 0;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: normal;
+}
+
+.site-transition-header-nav {
+  display: block;
+  margin: 0;
+  height: 15vh;
+  padding: 0;
+  background: linear-gradient(rgba(32,32,32,0), rgba(32,32,32,1));
+  margin-top: -15vh;
+}
+
+.site-content {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50vh;
+}
+
+@media screen and (min-width: 70rem) {
+  .site-content {
+    width: 70rem;
+  }
+}
+
+.site-footer {
+  display: flex;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-size: small;
+  justify-content: space-between;
+}
+
+.site-footer-left,
+.site-footer-right {
+  display: flex;
+  margin: 0;
+  padding: 1rem;
+  padding-left: 5vw;
+}
+
+.site-footer-left {
+  text-align: left;
+  padding-left: 5vw;
+}
+
+.site-footer-right {
+  text-align: right;
+  padding-right: 5vw;
+}
+
+.site-transition-footer-outro {
+  display: block;
+  position: absolute; /* Make sure it is drawn last. */
+  margin: 0;
+  width: 100%;
+  height: 15vh;
+  padding: 0;
+  background: linear-gradient(rgba(32,32,32,1), rgba(32,32,32,0));
+}
+
+.site-outro {
+  display: block;
+  margin: 0;
+  height: 30vh;
+  background:
+    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    url("/images/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  background-blend-mode: multiply;
+}
+
