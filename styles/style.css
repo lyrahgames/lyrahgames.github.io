@@ -846,9 +846,9 @@ main {
   min-height: 50vh;
 }
 
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 60rem) {
   main {
-    width: 70rem;
+    width: 60rem;
   }
 }
 
@@ -921,7 +921,7 @@ div.cv-work-item-time {
   font-style: italic;
   font-size: normal;
   /*float: left;*/
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   margin-bottom: 0rem;
   text-align: left;
   /*margin: 0;*/
@@ -961,8 +961,8 @@ div.cv-work-item-content {
   /*width: 70%;*/
   /*float: left;*/
   /*margin: 5rem;*/
-  padding: 0.5rem 2rem;
-  /*margin: 0;*/
+  padding: 0.5rem 0;
+  margin: 0;
   /*border: solid 1px #222;*/
 }
 
@@ -973,6 +973,7 @@ div.cv-work-item-content {
   div.cv-skills-item-level,
   div.cv-work-item-content {
     width: 70%;
+    padding: 0.5rem 2rem;
   }
 }
 
