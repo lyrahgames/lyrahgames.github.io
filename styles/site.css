@@ -205,12 +205,18 @@ p {
   display: block;
   margin: 0;
   height: 30vh;
+  color: #fff;
+
+
   background:
     linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
     url("/images/banner.jpg") no-repeat center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
   background-attachment: fixed;
-  color: #fff;
   background-blend-mode: multiply;
 }
 
