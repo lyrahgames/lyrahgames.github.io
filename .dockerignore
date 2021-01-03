@@ -1,0 +1,10 @@
+*
+
+!*.html
+!styles/*.css
+!scripts/*.js
+
+!images/*.jpg
+!images/*.png
+!images/*.svg
+
