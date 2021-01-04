@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
+
 <head>
   <meta charset="utf-8">
-
   <script src="scripts/site.js"></script>
-
   <link rel="stylesheet" href="styles/site.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <title>About | Markus Pawellek | lyrahgames.github.io</title>
   <meta name="description" content="About the Homepage of Markus Pawellek">
   <meta name="keywords" content="Projects, Source Code, Homepage">
   <meta name="author" content="Markus Pawellek">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <header class="site-header"></header>
   <div class="site-transition-header-nav"></div>
-
   <nav class="site-nav" id="site-nav">
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a class="current" href="#top">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="site_nav_responsive_toggle()">
+    <div class="site-nav-links" id="site-nav-links">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a class="current" href="about.html">About</a>
+    </div>
+    <div href="javascript:void(0);" class="site-nav-close-area" id="site-nav-close-area" onclick="close_site_nav()">
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="open_site_nav()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
-
   <main class="site-content">
     <section>
-      <h1>Test</h1>
+      <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,7 +51,6 @@
       </p>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="site-footer-left">
       Copyright &copy 2020 by Markus Pawellek
@@ -59,8 +59,8 @@
       Last Update: December 24, 2020
     </div>
   </footer>
-
   <div class="site-transition-footer-outro"></div>
   <div class="site-outro"></div>
 </body>
+
 </html>

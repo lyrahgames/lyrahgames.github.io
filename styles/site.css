@@ -3,11 +3,11 @@ html {
   font-size: 11pt;
   line-height: 1.5rem;
   color: #222;
-  quotes: "\00BB" "\00AB";
+  quotes: "\00BB""\00AB";
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 2000px) {
   html {
     font-size: 22pt;
   }
@@ -24,7 +24,7 @@ p {
 }
 
 .site-header {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   vertical-align: middle;
@@ -34,7 +34,7 @@ p {
   height: 50vh;
   background-color: #222;
   background:
-    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    linear-gradient(rgba(120, 200, 255, 1.0), rgba(120, 200, 255, 1.0)),
     url("/images/banner.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -85,20 +85,13 @@ p {
   display: none;
 }
 
+.site-nav-close-area {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .site-nav {
-    justify-content: space-between;
-  }
-
-  .site-nav a {
-    display: none;
-  }
-
-  .site-nav a.current {
-    background: unset;
-    background-color: #222;
-    display: block;
-    text-align: left;
+    justify-content: right;
   }
 
   .site-nav a.icon {
@@ -106,38 +99,40 @@ p {
     width: 2.5rem;
   }
 
-  .site-nav.responsive {
-    position: sticky;
-    /*flex-direction: column;*/
-    /*align-items: stretch;*/
-    flex-flow: row wrap;
-    width: 100vw;
+  .site-nav-links {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
-  .site-nav.responsive > * {
-    flex: 1 100%;
-  }
-
-  .site-nav.responsive a {
+  .site-nav-links a {
     display: block;
     text-align: left;
-    /*width: 80vw;*/
-    /*margin: 0;*/
-    /*width: 85%;*/
-    /*margin: auto;*/
+    width: 100%;
+    /*border-bottom: solid 1px #555;*/
   }
 
-  .site-nav.responsive a.current {
-    background: linear-gradient(#222, #57f);
-  }
-
-  .site-nav.responsive a.icon {
-    position: absolute;
-    margin: 0;
-    right: 0;
+  .site-nav-close-area {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    width: 2.5rem;
-    text-align: center;
+    left: 0;
+    background-color: #2220;
+    transition: background-color 0.5s linear;
+    overflow: hidden;
   }
 }
 
@@ -146,7 +141,7 @@ p {
   margin: 0;
   height: 15vh;
   padding: 0;
-  background: linear-gradient(rgba(32,32,32,0), rgba(32,32,32,1));
+  background: linear-gradient(rgba(32, 32, 32, 0), rgba(32, 32, 32, 1));
   margin-top: -15vh;
 }
 
@@ -193,12 +188,13 @@ p {
 
 .site-transition-footer-outro {
   display: block;
-  position: absolute; /* Make sure it is drawn last. */
+  position: absolute;
+  /* Make sure it is drawn last. */
   margin: 0;
   width: 100%;
   height: 15vh;
   padding: 0;
-  background: linear-gradient(rgba(32,32,32,1), rgba(32,32,32,0));
+  background: linear-gradient(rgba(32, 32, 32, 1), rgba(32, 32, 32, 0));
 }
 
 .site-outro {
@@ -209,7 +205,7 @@ p {
 
 
   background:
-    linear-gradient(rgba(120,200,255,1.0),rgba(120,200,255,1.0)),
+    linear-gradient(rgba(120, 200, 255, 1.0), rgba(120, 200, 255, 1.0)),
     url("/images/banner.jpg") no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -219,4 +215,3 @@ p {
   background-attachment: fixed;
   background-blend-mode: multiply;
 }
-

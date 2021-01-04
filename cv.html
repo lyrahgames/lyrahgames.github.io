@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
+
 <head>
   <meta charset="utf-8">
-
   <script src="scripts/site.js"></script>
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="styles/site.css">
-
   <title>Curriculum Vitae | Markus Pawellek | lyrahgames.github.io</title>
   <meta name="description" content="Curriculum Vitae on the Homepage of Markus Pawellek">
   <meta name="keywords" content="CV, Curriculum, Vitae, Homepage">
   <meta name="author" content="Markus Pawellek">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <header>
     <div class="cv-header">
@@ -51,23 +50,25 @@
       <div class="cv-header-birth">Born on May 7th, 1995 in Meiningen, Germany</div>
     </div>
     <!-- <div class="cv-photo"> -->
-      <img src="images/photo.png" class="cv-photo">
+    <img src="images/photo.png" class="cv-photo">
     <!-- </div> -->
   </header>
   <!-- <div class="site-background"></div> -->
   <div class="site-header-nav-transition"></div>
-
   <nav class="site-nav" id="site-nav">
-    <a href="index.html">Home</a>
-    <a class="current" href="#top">CV</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="site_nav_responsive_toggle()">
+    <div class="site-nav-links" id="site-nav-links">
+      <a href="index.html">Home</a>
+      <a class="current" href="cv.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div href="javascript:void(0);" class="site-nav-close-area" id="site-nav-close-area" onclick="close_site_nav()">
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="open_site_nav()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
-
   <main>
     <!-- <aside class="site-aside-nav">
       <h1>Table of Contents</h1>
@@ -80,10 +81,9 @@
       </ul>
     </aside> -->
     <!-- <section> -->
-      <!-- <h1>Curriculum Vitae</h1> -->
+    <!-- <h1>Curriculum Vitae</h1> -->
     <section>
       <h1 class="cv-section" id="Education">Education</h1>
-
       <div class="cv-education-location">Public High School <q>Goetheschule Ilmenau</q></div>
       <div class="cv-education-item">
         <div class="cv-education-item-time">Sep. 2009 - Jun. 2013</div>
@@ -98,7 +98,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-education-location">Technical University Ilmenau</div>
       <div class="cv-education-item">
         <div class="cv-education-item-time">Oct. 2011 - Sep. 2012</div>
@@ -106,9 +105,7 @@
           <h1>Early Studies: Experimental Physics (1.0)</h1>
         </div>
       </div>
-
       <div class="cv-education-location">Friedrich Schiller University Jena</div>
-
       <div class="cv-education-item">
         <div class="cv-education-item-time">Oct. 2013 - Sep. 2017</div>
         <div class="cv-education-item-content">
@@ -118,7 +115,6 @@
           </p>
         </div>
       </div>
-
       <div class="cv-education-item">
         <div class="cv-education-item-time">Oct. 2015 - Sep. 2018</div>
         <div class="cv-education-item-content">
@@ -129,7 +125,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-education-item">
         <div class="cv-education-item-time">Oct. 2017 - Mai 2020</div>
         <div class="cv-education-item-content">
@@ -140,7 +135,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-education-item">
         <div class="cv-education-item-time">since Oct. 2019</div>
         <div class="cv-education-item-content">
@@ -148,19 +142,15 @@
         </div>
       </div>
     </section>
-
     <section>
       <h1 class="cv-section" id="Skills">Skills</h1>
-
       <div class="cv-skills-kind">Computer Software Tools</div>
       <div class="cv-skills-item">
         <div class="cv-skills-item-name">C++</div>
         <div class="cv-skills-item-level">
           <h1>Advanced</h1>
           <div class="cv-skills-item-level-duration">10 years experience</div>
-
           <p>Primarily specialized in graphics programming, numerical mathematics, and computational physics (N-Body Simulation, Computational Fluid Dynamics, Path Tracing, Pseudorandom Number Generators)</p>
-
           Development Experiences:
           <ul>
             <li>Standards: C++11, C++14, C++17, C++20</li>
@@ -170,14 +160,12 @@
             <li>Build Systems: Make, CMake, Ninja, qmake, build2</li>
             <li>Operating Systems: Linux, Windows, MacOS</li>
           </ul>
-
           Teaching Experience:
           <ul>
             <li>University Courses for Students</li>
             <li>Weekly C++ Workshop for Students</li>
             <li>Private Tutor for Single Persons</li>
           </ul>
-
           Involvement in Open Source Projects:
           <ul>
             <li>build2</li>
@@ -185,65 +173,62 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-skills-item">
         <div class="cv-skills-item-kind">Further Languages</div>
         <div class="cv-skills-item-content">
           <h1>C, NASM, JavaScript, Python, Rust, Java</h1>
         </div>
       </div>
-
       <div class="cv-skills-item">
         <div class="cv-skills-item-kind">Further Tools</div>
         <div class="cv-skills-item-content">
           <h1>Git, Subversion, LaTeX, MkDocs, Gnuplot, Blender</h1>
         </div>
       </div>
-
       <div class="cv-skills-item">
         <div class="cv-skills-item-kind">DevOps</div>
         <div class="cv-skills-item-content">
           <h1>Docker, CircleCI, GitHub Actions</h1>
         </div>
       </div>
-
       <div class="cv-skills-item">
         <div class="cv-skills-item-kind">Operating Systems</div>
         <div class="cv-skills-item-content">
           <h1>Linux, Windows</h1>
         </div>
       </div>
-
       <div class="cv-skills-item">
         <div class="cv-skills-item-kind">Web Design</div>
         <div class="cv-skills-item-content">
           <h1>HTML5, CSS3, Jekyll</h1>
         </div>
       </div>
-
       <div class="cv-skills-kind">Languages</div>
       <div class="cv-skills-item">
         <div class="cv-skills-item-name">German</div>
-        <div class="cv-skills-item-level"><h1>Native</h1></div>
+        <div class="cv-skills-item-level">
+          <h1>Native</h1>
+        </div>
       </div>
       <div class="cv-skills-item">
         <div class="cv-skills-item-name">English</div>
-        <div class="cv-skills-item-level"><h1>Fluent</h1></div>
+        <div class="cv-skills-item-level">
+          <h1>Fluent</h1>
+        </div>
       </div>
       <div class="cv-skills-item">
         <div class="cv-skills-item-name">Russian</div>
-        <div class="cv-skills-item-level"><h1>Beginner</h1></div>
+        <div class="cv-skills-item-level">
+          <h1>Beginner</h1>
+        </div>
       </div>
-
       <div class="cv-skills-kind">Misc</div>
       <ul>
         <li>Driver's License</li>
       </ul>
     </section>
-
     <section>
       <h1 class="cv-section" id="Work">Work Experience</h1>
-
       <div class="cv-work-location">
         Fraunhofer ITWM Kaiserslautern: Competence Center High Performance Computing (CC HPC)
       </div>
@@ -267,7 +252,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-work-location">
         Friedrich Schiller University Jena
       </div>
@@ -282,7 +266,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-work-item">
         <div class="cv-work-item-time">Sep. 2018 and Oct. 2019</div>
         <div class="cv-work-item-content">
@@ -293,7 +276,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-work-location">
         ORISA Software GmbH
       </div>
@@ -304,10 +286,8 @@
         </div>
       </div>
     </section>
-
     <section>
       <h1 class="cv-section" id="Interests">Further Interests and Activities</h1>
-
       <div class="cv-interests-item">
         <div class="cv-interests-item-kind">
           Music
@@ -323,7 +303,6 @@
           </ul>
         </div>
       </div>
-
       <div class="cv-interests-item">
         <div class="cv-interests-item-kind">
           Sports
@@ -354,4 +333,5 @@
   <div class="site-footer-outro-transition"></div>
   <div class="outro"></div>
 </body>
+
 </html>
